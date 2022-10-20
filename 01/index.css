@@ -1,0 +1,152 @@
+html, body {
+    background-color: #090c15;
+    font-family: 'Lucida Sans', 
+        'Lucida Sans Regular', 
+        'Lucida Grande', 
+        'Lucida Sans Unicode', 
+        Geneva, 
+        Verdana, 
+        sans-serif;
+    color: white;
+    margin:0;
+    padding:0;
+}
+
+h2 {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #64ba64;
+}
+a:hover {
+    color: white;
+    border-radius: 4px;
+}
+
+.navbarelement {
+    margin: 8px;
+    color: #cccccc;
+}
+
+.navbarelement:hover {
+    text-decoration: underline;
+}
+
+.sidebarelement {
+    margin-left: auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right:0;
+    width: 100px;
+    border-radius: 4px;
+    background: none;
+    padding: 2px;
+    text-transform: capitalize;
+}
+
+.sidebarelement:hover {
+    color: white;
+    animation: fadelink 300ms forwards;
+}
+
+
+@keyframes fadesidebarelement {
+    100% {
+      background: #43853d;
+    }
+  }
+
+.sidebarelement:hover a {
+    color: white;
+}
+
+.selected {
+    background-color: #026e00;
+}
+
+.selected a {
+    color: white;
+}
+
+.selected:hover {
+    background-color: #026e00;
+}
+
+.panel {
+    margin:0;
+    background-color: #233056;
+}
+    
+
+#header {
+    padding-bottom: 6px;
+    border-bottom: solid 1px black;
+}
+
+#footer {
+    padding-top: 12px;
+    padding-bottom: 24px;
+    border-top: solid 1px black;
+    height: fit-content;
+}
+
+#footer p {
+    text-align: center;
+    font-size: smaller;
+    margin-bottom: 0;
+}
+
+#footer a {
+    color: #adb8ae;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#headertitle {
+    margin: auto;
+    width: fit-content;
+    background: none;
+    text-transform: lowercase;
+    font-size: 32pt;
+}
+
+#navbar {
+    margin: auto;
+    width: fit-content;
+    background: none;
+    border: none;
+    color: #8a9987;
+}
+
+#page {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+#sidebar {
+    flex: 0;
+    margin-right: 16px;
+}
+
+#content {
+    flex: 1;
+    max-width: 700px;
+}
+
+#content a:hover {
+    animation: fadelink 300ms forwards;
+}
+
+
+@keyframes fadelink {
+    100% {
+      background: #64ba64;
+    }
+  }
